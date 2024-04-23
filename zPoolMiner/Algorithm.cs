@@ -204,12 +204,16 @@
 
                     if (SecondaryBenchmarkSpeed > 0 && IsDual())
                     {
-                        payingRate += SecondaryBenchmarkSpeed * Globals.CryptoMiner937Data[SecondaryCryptoMiner937ID].paying * 0.000000001;
+                        try
+                        { payingRate += SecondaryBenchmarkSpeed * Globals.CryptoMiner937Data[SecondaryCryptoMiner937ID].paying * 0.000000001; }
+                        catch
+                        {
+                            payingRate += 0;
+                        }
+
+                        rate = payingRate.ToString("F8");
                     }
-
-                    rate = payingRate.ToString("F8");
                 }
-
                 return rate;
             }
         }

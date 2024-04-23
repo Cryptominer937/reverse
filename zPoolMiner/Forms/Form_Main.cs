@@ -103,7 +103,7 @@
         /// <summary>
         /// Defines the _betaAlphaPostfixString
         /// </summary>
-        private const string _betaAlphaPostfixString = " Beta";
+        private const string _betaAlphaPostfixString = "";
 
         /// <summary>
         /// Defines the _isDeviceDetectionInitialized

@@ -25,7 +25,7 @@ namespace HashKingsMiner.Devices
         {
             get
             {
-                var load = -1;
+                var load = 0;
 
                 try
                 {

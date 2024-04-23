@@ -1,4 +1,6 @@
-﻿using HashKingsMiner.Configs.Data;
+﻿
+using System;
+using HashKingsMiner.Configs.Data;
 
 namespace HashKingsMiner.Configs.ConfigJsonFile
 {

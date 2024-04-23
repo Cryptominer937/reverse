@@ -126,22 +126,22 @@
         /// <summary>
         /// Defines the SwitchMinSecondsFixed
         /// </summary>
-        public int SwitchMinSecondsFixed = 240;
+        public int SwitchMinSecondsFixed = 90;
 
         /// <summary>
         /// Defines the SwitchMinSecondsDynamic
         /// </summary>
-        public int SwitchMinSecondsDynamic = 120;
+        public int SwitchMinSecondsDynamic = 30;
 
         /// <summary>
         /// Defines the SwitchMinSecondsAMD
         /// </summary>
-        public int SwitchMinSecondsAMD = 180;
+        public int SwitchMinSecondsAMD = 60;
 
         /// <summary>
         /// Defines the SwitchProfitabilityThreshold
         /// </summary>
-        public double SwitchProfitabilityThreshold = 0.12;// percent
+        public double SwitchProfitabilityThreshold = 0.05;// percent
 
         /// <summary>
         /// Defines the MinerAPIQueryInterval
@@ -299,7 +299,7 @@
         // normalization stuff        /// <summary>
         /// Defines the IQROverFactor
         /// </summary>
-        public double IQROverFactor = 4.0;
+        public double IQROverFactor = 3.0;
 
         /// <summary>
         /// Defines the NormalizedProfitHistory
@@ -396,10 +396,10 @@
             NVIDIAP0State = false;
             MinerRestartDelayMS = 500;
             ethminerDefaultBlockHeight = 2000000;
-            SwitchMinSecondsFixed = 240;
-            SwitchMinSecondsDynamic = 120;
-            SwitchMinSecondsAMD = 180;
-            SwitchProfitabilityThreshold = 0.12; // percent
+            SwitchMinSecondsFixed = 90;
+            SwitchMinSecondsDynamic = 30;
+            SwitchMinSecondsAMD = 90;
+            SwitchProfitabilityThreshold = 0.05; // percent
             MinIdleSeconds = 60;
             DisplayCurrency = "USD";
             ApiBindPortPoolStart = 4000;
@@ -494,7 +494,7 @@
 
             if (IQRNormalizeFactor < 0)
             {
-                IQRNormalizeFactor = 4.0;
+                IQRNormalizeFactor = 0.1;
             }
         }
     }
